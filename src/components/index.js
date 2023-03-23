@@ -1,26 +1,25 @@
 import Navbar from "./Navbar";
 import Billing from "./Billing";
-import CardDeal from "./CardDeal";
-import Business from "./Business";
+import Deskripsi from "./Deskripsi";
 import Clients from "./Clients";
-import CTA from "./CTA";
+import Join from "./Join";
 import Stats from "./Stats";
 import Footer from "./Footer";
-import Testimonials from "./Testimonials";
+import CreateNFT from "./CreateNFT";
 import Hero from "./Hero";
 import ExploreNow from "./ExploreNow";
 import Create from "./Create";
 
+
 export {
   Navbar,
   Billing,
-  CardDeal,
-  Business,
+  Deskripsi,
   Clients,
-  CTA,
+  Join,
   Stats,
   Footer,
-  Testimonials,
+  CreateNFT,
   Hero,
   ExploreNow,
   Create,

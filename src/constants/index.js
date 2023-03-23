@@ -1,4 +1,4 @@
-import { people01, people02, people03, facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {  facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
 
 export const navLinks = [
   {
@@ -27,52 +27,26 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Digital Art Exhibition",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "allows users to browse, evaluate, and purchase NFTs. These exhibitions can contain works of digital art such as drawings, videos, and music, and can feature prominent artists from around the world.",
   },
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Auto Auction Feature",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "the auto auction feature allows users to make automatic bids on desired NFTs.",
   },
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Crypto Wallet Integration",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "crypto wallet integration allows users to purchase NFTs using digital currencies such as Bitcoin or Ethereum.",
   },
 ];
 
-export const feedback = [
-  {
-    id: "feedback-1",
-    content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
-    img: people01,
-  },
-  {
-    id: "feedback-2",
-    content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
-    img: people02,
-  },
-  {
-    id: "feedback-3",
-    content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
-    img: people03,
-  },
-];
 
 export const stats = [
   {
@@ -82,8 +56,8 @@ export const stats = [
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "NFT art",
+    value: "230.2k",
   },
   {
     id: "stats-3",

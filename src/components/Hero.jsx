@@ -26,7 +26,7 @@ const Hero = () => {
 
         <motion.img 
           variants={fadeIn('right', 'tween', 0.5 , 2)} 
-          src={mobileContent} alt="mobileContent" className="w-[100%] h-[100%] relative z-[5]" >
+          src={mobileContent} alt="mobileContent" className="w-[100%] h-[100%] relative z-[1]" >
         </motion.img>
 
       </motion.div>
@@ -56,9 +56,7 @@ const Hero = () => {
           <motion.p
           variants={textVariant(1.1)} 
           className={`${styles.paragraph} max-w-[770px] mt-5 ss:px-1 z-[999] text-justify text-center mx-5`}>
-            Our team of experts uses a methodology to identify the credit cards
-            most likely to fit your needs. We examine annual percentage rates,
-            annual fees.
+           Welcome to our landing page for NFTs, a platform that allows you to buy, sell, and collect unique and exclusive NFTs. With decentralized blockchain technology, you can have full ownership of digital art, music collections, or even rare virtual items.
 
               {/* button */}
               <motion.div
@@ -66,7 +64,7 @@ const Hero = () => {
                 className="flex flex-row "
               >
                 <ExploreNow styles={` mt-1`} />
-                <Create styles={` mt-2 ss:mx-5 mx-5`} />
+                <Create styles={` mt-2 ss:mx-10 mx-2`} />
               </motion.div>
 
               <div

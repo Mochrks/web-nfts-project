@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { motion } from 'framer-motion';
-import { textVariant ,slideIn ,fadeIn,textVariant2,staggerContainer,navVariants} from "../utils/motion.js";
+import { fadeIn,navVariants} from "../utils/motion.js";
 
-import { close, logo, menu ,akun ,btnWallet} from "../assets";
+import { close, menu  ,btnWallet} from "../assets";
 import { navLinks } from "../constants";
 
 
@@ -29,7 +29,7 @@ const Navbar = () => {
       </motion.p>
 
       {/* menu navbar */}
-      <ul className="list-none sm:flex  hidden justify-center items-center ml-20  flex-1 ">
+      <ul className="list-none sm:flex  hidden justify-center items-center ml-20  flex-1  z-[5]">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
@@ -43,12 +43,12 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className=" flex-row-reverse justify-end items-center">
+      <div className=" flex-row-reverse justify-end items-center  z-[5]">
         <img src={btnWallet} alt="btnWallet" className="sm:ml-10 ml-5 object-contain relative cursor-pointer" />
       </div>
 
       {/* toogle menu bar */}
-      <div className="sm:hidden flex flex-1 justify-end items-center">
+      <div className="sm:hidden flex flex-1 justify-end items-center  z-[5]">
 
         {/* gambar bar menu */}
         <img
@@ -63,7 +63,7 @@ const Navbar = () => {
         <div
           className={`${
             !toggle ? "hidden" : "flex"
-          } p-6 bg-blue-gradient absolute top-20 right-0 mx-4 my-2 min-w-[160px] rounded-xl sidebar`}
+          } p-6 bg-blue-gradient absolute top-20 right-0 mx-4 my-2 min-w-[160px] rounded-xl sidebar z-[5]`}
         >
           <ul className="list-none flex justify-end items-start flex-1 flex-col">
             {navLinks.map((nav, index) => (
