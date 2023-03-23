@@ -1,10 +1,20 @@
 import { apple,  google ,shape ,bgshape } from "../assets";
 import styles, { layout } from "../style";
+import { motion } from 'framer-motion';
+import { textVariant ,slideIn ,fadeIn,textVariant2,staggerContainer, zoomIn,planetVariants} from "../utils/motion.js";
 
 const Billing = () => (
   <section id="product" className={layout.sectionReverse}>
     <div className={layout.sectionImgReverse}>
-      <img src={shape} alt="billing" className="w-[100%] h-[100%] relative z-[5]" />
+      <motion.img 
+      variants={fadeIn('right', 'tween', 0.5 , 1)} 
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.25 }}
+
+     
+      src={shape} alt="billing" 
+      className="w-[100%] h-[100%] relative z-[5]" />
 
       {/* gradient start */}
       <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />
