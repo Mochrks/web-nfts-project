@@ -9,7 +9,8 @@ import CreateNFT from "./CreateNFT";
 import Hero from "./Hero";
 import ExploreNow from "./ExploreNow";
 import Create from "./Create";
-
+import Subscribe from "./Subscribe";
+import HotDrop from "./HotDrop";
 
 export {
   Navbar,
@@ -23,4 +24,6 @@ export {
   Hero,
   ExploreNow,
   Create,
+  Subscribe,
+  HotDrop,
 };

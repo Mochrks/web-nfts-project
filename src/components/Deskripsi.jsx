@@ -20,7 +20,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
     </motion.div>
 
-
+ 
     <motion.div 
     variants={fadeIn('left', 'tween', 0.5 , 1)} 
     className="flex-1 flex flex-col ml-3">
@@ -56,11 +56,11 @@ const Deskripsi = () =>  (
 
       <motion.p 
       variants={fadeIn('up', 'tween', 0.5 , 1)} 
-      className={`${styles.paragraph} max-w-[470px] mt-5`}>
+      className={`${styles.paragraph} max-w-[470px] mt-5 text-justify`}>
         Don't miss the opportunity to own rare and exclusive NFTs, and connect with a community of creatives who are equally passionate about exploring this new technology. Join us today and start discovering the world of NFTs!
       </motion.p>
 
-      <Button styles={`mt-10`} />
+      <Button styles={`mt-10 `} />
     </motion.div>
 
     <motion.div
@@ -70,6 +70,9 @@ const Deskripsi = () =>  (
         <FeatureCard key={feature.id} {...feature} index={index} />
       ))}
     </motion.div>
+
+    {/* bg gradient */}
+    <div className="absolute z-[0] w-[20%] h-[20%] left-[64%]  rounded-full   gradient-01 " />
 
   </section>
 );

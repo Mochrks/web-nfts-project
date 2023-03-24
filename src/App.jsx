@@ -1,5 +1,5 @@
 import styles from "./style";
-import { Billing, Deskripsi,  Clients, Join, Footer, Navbar, CreateNFT, Hero } from "./components";
+import { Billing, Deskripsi,  Clients, Join, Footer, Navbar, CreateNFT, Hero ,Subscribe,HotDrop} from "./components";
 
 const App = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -17,9 +17,10 @@ const App = () => (
     
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        
+        <HotDrop />
         <Deskripsi />
         <Billing />
+        <Subscribe />
         <CreateNFT />
         <Clients />
         <Join />

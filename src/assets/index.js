@@ -28,6 +28,13 @@ import nft2 from  "./nft2.svg";
 import nft3 from  "./nft3.svg";
 import favicon from "./favicon.png";
 import bgshape from "./bgshape.svg"
+import nft4 from "./nft4.svg";
+import nft5 from "./nft5.svg";
+import nft6 from "./nft6.svg";
+import nft7 from "./nft7.svg";
+import nft8 from "./nft8.svg";
+import nft9 from "./nft9.svg";
+import nft10 from "./nft10.svg";
 
 
 export {
@@ -60,5 +67,12 @@ export {
   nft1,
   nft2,
   nft3,
+  nft4,
+  nft5,
+  nft6,
+  nft7,
+  nft8,
+  nft9,
+  nft10,
   bgshape,
 };
