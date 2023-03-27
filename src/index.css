@@ -18,6 +18,27 @@
   scroll-behavior: smooth;
 }
 
+
+/* scrool */
+::-webkit-scrollbar{
+  width: 10px;
+  height: 10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+  background: linear-gradient(
+    to bottom,
+    #392156,
+    #318AAC
+  );
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track{
+  background: #474747;
+}
+
+/* akhir scroolbar */
 /* gradient */
 /* baru */
 .gradient-01 {
