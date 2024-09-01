@@ -1,4 +1,16 @@
-import {  facebook, instagram, linkedin, twitter, airbnb, binance, coinbase, dropbox, send, shield, star  } from "../assets";
+import {
+  facebook,
+  instagram,
+  linkedin,
+  twitter,
+  airbnb,
+  binance,
+  coinbase,
+  dropbox,
+  send,
+  shield,
+  star,
+} from "../assets";
 
 export const navLinks = [
   {
@@ -17,7 +29,7 @@ export const navLinks = [
     id: "features",
     title: "Features",
   },
-  { 
+  {
     id: "community",
     title: "Community",
   },
@@ -46,7 +58,6 @@ export const features = [
       "crypto wallet integration allows users to purchase NFTs using digital currencies such as Bitcoin or Ethereum.",
   },
 ];
-
 
 export const stats = [
   {
@@ -145,11 +156,6 @@ export const socialMedia = [
   },
   {
     id: "social-media-3",
-    icon: twitter,
-    link: "https://www.twitter.com/",
-  },
-  {
-    id: "social-media-4",
     icon: linkedin,
     link: "https://www.linkedin.com/",
   },

@@ -7,7 +7,7 @@ import {
   staggerContainer,
 } from "../utils/motion.js";
 import { features } from "../constants";
-import styles, { layout } from "../style";
+import styles, { layout } from "../styles/style";
 import Button from "./Button";
 
 const FeatureCard = ({ icon, title, content, index }) => (
@@ -16,7 +16,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
     initial="hidden"
     whileInView="show"
     viewport={{ once: false, amount: 0.25 }}
-    className={`flex flex-row p-6 rounded-[20px] ${
+    className={`flex flex-row p-6 rounded-[20px] cursor-pointer ${
       index !== features.length - 1 ? "mb-6" : "mb-0"
     } feature-card`}
   >
@@ -42,7 +42,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
 );
 
 const Deskripsi = () => (
-  <section id="community" className={layout.section}>
+  <section id="features" className={layout.section}>
     <motion.div
       variants={fadeIn("left", "tween", 0.5, 1)}
       initial="hidden"

@@ -1,6 +1,6 @@
-import styles from "../style";
+import styles from "../styles/style";
 import ButtonViewAll from "./ButtonViewAll";
-import { layout } from "../style";
+import { layout } from "../styles/style";
 import {
   nft1,
   nft2,
@@ -26,15 +26,19 @@ import {
 } from "../utils/motion.js";
 
 const HotDrop = () => (
-  <section
-    id="activity"
+  <motion.section
+    initial="hidden"
+    variants={fadeIn("up", "tween", 0.5, 2)}
+    whileInView="show"
     className={`${styles.flexCenter} ${styles.marginY} ${styles.padding} sm:flex-row flex-col bg-discount-gradient rounded-[20px] box-shadow`}
   >
-    <div className={`${layout.sectionImg} flex-col`}>
+    <motion.div
+      variants={fadeIn("up", "tween", 0.5, 2)}
+      className={`${layout.sectionImg} flex-col`}
+    >
       <p className={`${styles.paragraph} max-w-full mt-5  text-center`}>
         NFT MARKETPLACE
       </p>
-
       <h2 className={`${styles.heading2} text-center`}>Hot Drop</h2>
 
       <div className={`${styles.flexCenter}  flex sm:flex-row flex-col  `}>
@@ -128,8 +132,8 @@ const HotDrop = () => (
       <div className="flex1 flex flex-row">
         <ButtonViewAll styles={`mt-[22%]`} />
       </div>
-    </div>
-  </section>
+    </motion.div>
+  </motion.section>
 );
 
 export default HotDrop;

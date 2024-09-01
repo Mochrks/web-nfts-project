@@ -1,10 +1,13 @@
 import { stats } from "../constants";
-import styles from "../style";
+import styles from "../styles/style";
 
 const Stats = () => (
   <section className={`${styles.flexCenter} flex-row flex-wrap sm:mb-20 mb-6`}>
     {stats.map((stat) => (
-      <div key={stat.id} className={`flex flex-col justify-center items-center flex-row xs:ml-10  ml-8`} >
+      <div
+        key={stat.id}
+        className={`flex flex-col justify-center items-center  xs:ml-10 ml-8`}
+      >
         <h4 className="font-poppins font-semibold xs:text-[25.89px] text-[16.89px] xs:leading-[53.16px] leading-[43.16px] text-white ">
           {stat.value}
         </h4>

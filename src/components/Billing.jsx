@@ -1,5 +1,5 @@
 import { apple, google, shape, bgshape } from "../assets";
-import styles, { layout } from "../style";
+import styles, { layout } from "../styles/style";
 import { motion } from "framer-motion";
 import {
   textVariant,
@@ -12,7 +12,13 @@ import {
 } from "../utils/motion.js";
 
 const Billing = () => (
-  <section id="features" className={layout.sectionReverse}>
+  <motion.section
+    id="product"
+    variants={staggerContainer}
+    initial="hidden"
+    whileInView="show"
+    className={layout.sectionReverse}
+  >
     <div className={layout.sectionImgReverse}>
       <motion.img
         variants={fadeIn("right", "tween", 0.5, 1)}
@@ -30,7 +36,7 @@ const Billing = () => (
       {/* gradient end */}
     </div>
 
-    <div className={layout.sectionInfo}>
+    <motion.div variants={textVariant(1.1)} className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
         Easily control your <br className="sm:block hidden" /> billing &
         invoicing
@@ -52,8 +58,8 @@ const Billing = () => (
           className="w-[144.17px] h-[43.08px] object-contain cursor-pointer"
         />
       </div>
-    </div>
-  </section>
+    </motion.div>
+  </motion.section>
 );
 
 export default Billing;

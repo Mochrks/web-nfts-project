@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styles from "../style";
+import styles from "../styles/style";
 import { nft, mobileContent, b, s, d } from "../assets";
 import {
   textVariant,
@@ -15,8 +15,7 @@ import Stats from "./Stats";
 
 const Hero = () => {
   return (
-    // heroo awal
-    <section id="market" className={`flex md:flex-row flex-col sm:py-1 py-10`}>
+    <section id="home" className={`flex md:flex-row flex-col sm:py-1 py-10`}>
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -24,8 +23,7 @@ const Hero = () => {
         viewport={{ once: false, amount: 0.25 }}
         className={`flex-1 ${styles.flexStart} flex-row xl:px-0 sm:px-16 px-6 z-[999]`}
       >
-        {/* gambar content */}
-
+        {/* images content */}
         <motion.img
           variants={fadeIn("right", "tween", 0.5, 2)}
           src={mobileContent}
@@ -52,10 +50,10 @@ const Hero = () => {
           </h1>
         </motion.div>
 
-        {/* deskripsi */}
+        {/* description */}
         <motion.p
           variants={textVariant(1.1)}
-          className={`${styles.paragraph} max-w-[770px] mt-5 ss:px-1 z-[999] text-justify text-center mx-5`}
+          className={`${styles.paragraph} max-w-[770px] mt-5 ss:px-1 z-[999] text-justify  mx-5`}
         >
           Welcome to our landing page for NFTs, a platform that allows you to
           buy, sell, and collect unique and exclusive NFTs. With decentralized
@@ -74,22 +72,17 @@ const Hero = () => {
           </div>
           {/* icon bussines */}
           <div className="flex flex-row justify-end">
-            {/* gambar1 */}
             <img
               src={b}
               alt="b"
               className="w-[13%] h-[100%] object-contan relative z-[5]"
             ></img>
 
-            {/* gambar 2 */}
-
             <img
               src={s}
               alt="s"
               className="w-[20%] h-[100%] object-contain relative z-[5] "
             ></img>
-
-            {/* gambar 3 */}
 
             <img
               src={d}
@@ -101,33 +94,27 @@ const Hero = () => {
 
         {/* gradient start */}
 
-        {/* white ditengah */}
+        {/* line center */}
         <div className="absolute z-[1] w-[80%] h-[80%] rounded-full white__gradient bottom-40" />
         {/* blue */}
         <div className="absolute z-[1] w-[30%] h-[30%] -left-[4%]  rounded-full   gradient-02-2 " />
         {/* pink */}
         <div className="absolute z-[0] w-[30%] h-[30%] -left-[50%]  rounded-full   gradient-06 " />
-        {/* ungu */}
+        {/* purple */}
         <div className="absolute z-[1] w-[140%] h-[165%]  -left-[160%] ungu__gradient  bottom-40" />
 
         {/* gradient end */}
-
-        {/* garis panjang 1 */}
+        {/* line long 1 */}
         <div className=" absolute z-[0] border-l border-gray-300 h-[300%] -left-[20%] opacity-5" />
-
-        {/* garis panjang 2 */}
+        {/* line long 2 */}
         <div className=" absolute z-[0] border-l border-gray-300 h-[300%] -right-[10%] opacity-5" />
-
-        {/* garis panjang 3 */}
+        {/* line long 3 */}
         <div className=" absolute z-[0] border-l border-gray-300 h-[300%] right-[53%] opacity-5" />
-
-        {/* bulat 1 */}
+        {/* circle 1 */}
         <div className=" absolute z-[0] border border-gray-300 w-[80%] h-[65%] rounded-full mt-[110%] -left-[104%]  opacity-5" />
-
-        {/* bulat 2 */}
+        {/* circle 2 */}
         <div className=" absolute z-[0] border border-gray-300 w-[80%] h-[65%] rounded-full mt-[80%] -left-[135%]  opacity-5" />
-
-        {/* bulat 2 */}
+        {/* circle 2 */}
         <div className=" absolute z-[0] border border-gray-300 w-[80%] h-[65%] rounded-full mt-[30%] -left-[155%]  opacity-5" />
       </motion.div>
     </section>

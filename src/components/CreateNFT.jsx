@@ -6,14 +6,13 @@ import {
   textVariant2,
   staggerContainer,
 } from "../utils/motion.js";
-import styles from "../style";
+import styles from "../styles/style";
 import ButtonSee from "./ButtonSee";
-
 import { nft1, nft2, nft3 } from "../assets";
 
 const CreateNFT = () => (
   <section
-    id="artis"
+    id="clients"
     className={`${styles.paddingY} ${styles.flexCenter} flex-col relative `}
   >
     {/* gradient */}

@@ -1,9 +1,9 @@
-import styles from "../style";
+import styles from "../styles/style";
 import { favicon } from "../assets";
 import { footerLinks, socialMedia } from "../constants";
 
 const Footer = () => (
-  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col`}>
+  <section className={`${styles.flexCenter} ${styles.paddingY} flex-col pt-0`}>
     <div className={`${styles.flexStart} md:flex-row flex-col mb-8 w-full`}>
       <div className="flex-[1] flex flex-row justify-start mr-10">
         <img
@@ -11,14 +11,20 @@ const Footer = () => (
           alt="hoobank"
           className="w-[266px] h-[72.14px] object-contain"
         />
-        <p className={`${styles.paragraph} ml-2 max-w-[312px] text-justify`}>
-          Discover the world of unique digital assets, Own a piece of the digital future, Join the revolution of digital ownership 
+        <p
+          className={`${styles.paragraph} ml-5 lg:ml-2 max-w-[212px] text-justify`}
+        >
+          Discover the world of unique digital assets, Own a piece of the
+          digital future, Join the revolution of digital ownership
         </p>
       </div>
 
       <div className="flex-[1] w-full flex flex-row justify-between flex-wrap md:mt-0 mt-10">
         {footerLinks.map((footerlink) => (
-          <div key={footerlink.title} className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}>
+          <div
+            key={footerlink.title}
+            className={`flex flex-col ss:my-0 my-4 min-w-[150px]`}
+          >
             <h4 className="font-poppins font-medium text-[18px] leading-[27px] text-white">
               {footerlink.title}
             </h4>

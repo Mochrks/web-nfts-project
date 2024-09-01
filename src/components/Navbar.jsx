@@ -1,34 +1,31 @@
 import { useState } from "react";
-import { motion } from 'framer-motion';
-import { fadeIn,navVariants} from "../utils/motion.js";
+import { motion } from "framer-motion";
+import { fadeIn, navVariants } from "../utils/motion.js";
 
-import { close, menu  ,btnWallet} from "../assets";
+import { close, menu, btnWallet } from "../assets";
 import { navLinks } from "../constants";
-
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
 
   return (
-    <motion.nav 
-     variants={navVariants}
+    <motion.nav
+      variants={navVariants}
       initial="hidden"
       whileInView="show"
-      className="w-full flex py-6 justify-between items-center navbar">
-      {/* logo navbar */}
-      {/* <img src={robot} alt="hoobank" className="w-[124px] h-[32px]" /> */}
-
-      {/* memakai text */}
+      className="w-full flex py-6 justify-between items-center navbar"
+    >
       <motion.p
-      variants={fadeIn('up','tween',0.5 ,0.9)}
-      initial="hidden"
-      animate="show" 
-      className="font-poppins font-semibold ss:text-[21px] text-[22px] text-white ss:leading-[100.8px] leading-[35px] z-[999]">
-          Gdvisuel
+        variants={fadeIn("up", "tween", 0.5, 0.9)}
+        initial="hidden"
+        animate="show"
+        className="font-poppins font-semibold ss:text-[21px] text-[22px] text-white ss:leading-[100.8px] leading-[35px] z-[999]"
+      >
+        Mochrks
       </motion.p>
 
-      {/* menu navbar */}
+      {/* menu nav */}
       <ul className="list-none sm:flex  hidden justify-center items-center ml-20  flex-1  z-[5]">
         {navLinks.map((nav, index) => (
           <li
@@ -44,13 +41,16 @@ const Navbar = () => {
       </ul>
 
       <div className=" flex-row-reverse justify-end items-center  z-[5]">
-        <img src={btnWallet} alt="btnWallet" className="sm:ml-10 ml-5 object-contain relative cursor-pointer" />
+        <img
+          src={btnWallet}
+          alt="btnWallet"
+          className="sm:ml-10 ml-5 object-contain relative cursor-pointer"
+        />
       </div>
 
       {/* toogle menu bar */}
       <div className="sm:hidden flex flex-1 justify-end items-center  z-[5]">
-
-        {/* gambar bar menu */}
+        {/* image bar menu */}
         <img
           src={toggle ? close : menu}
           alt="menu"
@@ -58,8 +58,7 @@ const Navbar = () => {
           onClick={() => setToggle(!toggle)}
         />
 
-
-        {/* menu toogle saat mobile or tablet */}
+        {/*toogle menu bar in mobile */}
         <div
           className={`${
             !toggle ? "hidden" : "flex"
