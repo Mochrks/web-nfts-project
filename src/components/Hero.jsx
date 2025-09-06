@@ -1,14 +1,7 @@
 import { motion } from "framer-motion";
 import styles from "../styles/style";
-import { nft, mobileContent, b, s, d } from "../assets";
-import {
-  textVariant,
-  slideIn,
-  fadeIn,
-  textVariant2,
-  staggerContainer,
-} from "../utils/motion.js";
-import Button from "./Button";
+import { mobileContent, b, s, d } from "../assets";
+import { textVariant, fadeIn, staggerContainer } from "../utils/motion.js";
 import ExploreNow from "./ExploreNow";
 import Create from "./Create";
 import Stats from "./Stats";

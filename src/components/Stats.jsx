@@ -1,4 +1,4 @@
-import { stats } from "../constants";
+import { stats } from "../apis";
 import styles from "../styles/style";
 
 const Stats = () => (

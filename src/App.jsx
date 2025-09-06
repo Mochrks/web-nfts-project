@@ -1,7 +1,7 @@
 import styles from "./styles/style";
 import {
   Billing,
-  Deskripsi,
+  Description,
   Clients,
   Join,
   Footer,
@@ -29,7 +29,7 @@ const App = () => (
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <HotDrop />
-        <Deskripsi />
+        <Description />
         <Billing />
         <Subscribe />
         <CreateNFT />

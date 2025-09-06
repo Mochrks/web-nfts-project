@@ -1,14 +1,8 @@
 import { motion } from "framer-motion";
-import {
-  textVariant,
-  slideIn,
-  fadeIn,
-  textVariant2,
-  staggerContainer,
-} from "../utils/motion.js";
-import { features } from "../constants";
-import styles, { layout } from "../styles/style";
-import Button from "./Button";
+import { fadeIn, staggerContainer } from "../utils/motion.js";
+import { features } from "../apis/index.js";
+import styles, { layout } from "../styles/style.js";
+import Button from "./Button.jsx";
 
 const FeatureCard = ({ icon, title, content, index }) => (
   <motion.div
@@ -41,7 +35,7 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </motion.div>
 );
 
-const Deskripsi = () => (
+const Description = () => (
   <section id="features" className={layout.section}>
     <motion.div
       variants={fadeIn("left", "tween", 0.5, 1)}
@@ -82,4 +76,4 @@ const Deskripsi = () => (
   </section>
 );
 
-export default Deskripsi;
+export default Description;

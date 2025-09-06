@@ -1,11 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  textVariant,
-  slideIn,
-  fadeIn,
-  textVariant2,
-  staggerContainer,
-} from "../utils/motion.js";
+import { fadeIn } from "../utils/motion.js";
 import styles from "../styles/style";
 import ButtonSee from "./ButtonSee";
 import { nft1, nft2, nft3 } from "../assets";

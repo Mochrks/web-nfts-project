@@ -2,7 +2,6 @@ import {
   facebook,
   instagram,
   linkedin,
-  twitter,
   airbnb,
   binance,
   coinbase,

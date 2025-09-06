@@ -1,6 +1,6 @@
 import Navbar from "./Navbar";
 import Billing from "./Billing";
-import Deskripsi from "./Deskripsi";
+import Description from "./Description";
 import Clients from "./Clients";
 import Join from "./Join";
 import Stats from "./Stats";
@@ -15,7 +15,7 @@ import HotDrop from "./HotDrop";
 export {
   Navbar,
   Billing,
-  Deskripsi,
+  Description,
   Clients,
   Join,
   Stats,

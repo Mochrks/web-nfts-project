@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn, navVariants } from "../utils/motion.js";
-
 import { close, menu, btnWallet } from "../assets";
-import { navLinks } from "../constants";
+import { navLinks } from "../apis";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");

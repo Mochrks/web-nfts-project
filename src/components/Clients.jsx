@@ -1,12 +1,6 @@
-import { clients } from "../constants";
+import { clients } from "../apis";
 import styles from "../styles/style";
-import {
-  textVariant,
-  slideIn,
-  fadeIn,
-  textVariant2,
-  staggerContainer,
-} from "../utils/motion.js";
+import { textVariant } from "../utils/motion.js";
 import { motion } from "framer-motion";
 const Clients = () => (
   <motion.section

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { exploreNow } from "../assets";
 
 const ExploreNow = ({ styles }) => (
@@ -7,5 +8,9 @@ const ExploreNow = ({ styles }) => (
     className={`w-[200px] h-[180px] object-contain cursor-pointer ${styles}`}
   />
 );
+
+ExploreNow.propTypes = {
+  styles: PropTypes.string.isRequired,
+};
 
 export default ExploreNow;

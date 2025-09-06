@@ -1,12 +1,6 @@
 import styles from "../styles/style";
 import Subs from "./Subs";
-import {
-  textVariant,
-  slideIn,
-  fadeIn,
-  textVariant2,
-  staggerContainer,
-} from "../utils/motion.js";
+import { textVariant } from "../utils/motion.js";
 import { motion } from "framer-motion";
 
 const Subscribe = () => (

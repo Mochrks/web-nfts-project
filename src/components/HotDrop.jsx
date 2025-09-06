@@ -1,6 +1,5 @@
-import styles from "../styles/style";
 import ButtonViewAll from "./ButtonViewAll";
-import { layout } from "../styles/style";
+import { layout, styles } from "../styles/style";
 import {
   nft1,
   nft2,
@@ -17,13 +16,7 @@ import ButtonTrending from "./ButtonTrending";
 import ButtonVideo from "./ButtonVideo";
 import ButtonVirtual from "./ButtonVirtual";
 import { motion } from "framer-motion";
-import {
-  textVariant,
-  slideIn,
-  fadeIn,
-  textVariant2,
-  staggerContainer,
-} from "../utils/motion.js";
+import { fadeIn } from "../utils/motion.js";
 
 const HotDrop = () => (
   <motion.section
