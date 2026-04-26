@@ -9,7 +9,7 @@ const Footer = () => (
         <img
           src={favicon}
           alt="hoobank"
-          className="w-[266px] h-[72.14px] object-contain"
+          className="w-[466px] h-[72.14px] object-contain"
         />
         <p
           className={`${styles.paragraph} ml-5 lg:ml-2 max-w-[212px] text-justify`}
